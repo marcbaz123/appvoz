@@ -1,0 +1,117 @@
+
+<ion-toolbar color="dark"> 
+<ion-title>Voz Para La Gente</ion-title>
+    <ion-buttons color="dark">
+    <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+    <ion-button href="http://localhost:8100/principal">
+      <ion-icon slot="end" name="home-outline"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+  
+</ion-toolbar>
+
+<ion-app>
+  
+    <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="medium">
+      <ion-list color="medium">
+       
+        <ion-item href="http://localhost:8100/config" color="light">
+           Configuraciones 
+            <ion-icon name="construct-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/perfil" color="dark">
+           Perfil 
+            <ion-icon name="person-outline" slot="end">
+             
+            </ion-icon>
+
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/nego" color="light">
+           Negociaciones 
+            <ion-icon name="chatbox-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        
+        <ion-item href="http://localhost:8100/politicas" color="dark">
+            Politicas y Condiciones 
+             <ion-icon name="warning-outline" slot="end">
+ 
+             </ion-icon>
+         </ion-item>
+        
+        <ion-item href="http://localhost:8100/login" color="light">
+            Cerrar sesion 
+            <ion-icon name="exit-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    
+  </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+    
+<ion-content [fullscreen]="true">
+  <ion-card-content>
+    <ion-card>
+      <ion-card-header >
+      
+        <ion-card-subtitle >
+           Recomendados
+        </ion-card-subtitle>
+        <ion-img  src="https://cnnespanol.cnn.com/wp-content/uploads/2018/12/chalecos-amarillos-francia-paris-protestas.jpg?quality=100&strip=info"></ion-img>
+    
+        <ion-card-title>OLIVER ROCO</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+       Esto es de forma ilustrativa, para ver si queda mejor de esta manera o de otra forma, de todas formas esto es un ejemplo el cual sera modificado a la hora de formar el ejemplo ilustrativo final.
+     
+       <ion-item-divider [routerLink]="['/nego']" routerLinkActive="router-link-active">
+        Negociar 
+        <ion-icon slot="end" name="chatbubbles-outline"></ion-icon>
+            </ion-item-divider>
+      </ion-card-content>
+     
+    
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header >
+      
+        <ion-card-subtitle >
+           Quizas te interese
+             
+        </ion-card-subtitle>
+        <ion-img  src="https://thumbs.dreamstime.com/z/joven-liderando-un-grupo-de-manifestantes-en-la-calle-j%C3%B3venes-raza-mixta-internacional-diverso-personas-con-carteles-blanco-198085266.jpg"></ion-img>
+    
+        <ion-card-title>OLIVIA GANGSTART</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+       Esto es de forma ilustrativa, para ver si queda mejor de esta manera o de otra forma, de todas formas esto es un ejemplo el cual sera modificado a la hora de formar el ejemplo ilustrativo final.
+       
+       <ion-item-divider [routerLink]="['/nego']" routerLinkActive="router-link-active">
+        Negociar 
+        <ion-icon slot="end" name="chatbubbles-outline"></ion-icon>
+            </ion-item-divider>
+      </ion-card-content>
+    </ion-card>
+  </ion-card-content> 
+</ion-content>
+    
+  
+</ion-app>

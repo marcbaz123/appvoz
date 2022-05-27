@@ -1,0 +1,7 @@
+{
+  "name": "appvoz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

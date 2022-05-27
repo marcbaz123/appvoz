@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <img src="https://i.postimg.cc/sx36vd9y/Logo-V-1.jpg">
+    <ion-title>
+
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header color="dark">
+      <ion-card-title>Registrarse</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro">
+        <ion-item color="light">
+          <b>
+            Ingresar los datos solicitados
+          </b>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-label position="floating">Correo Electronico</ion-label>
+          <ion-input formControlName="correo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="Nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input formControlName="Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar Password</ion-label>
+          <ion-input formControlName="Password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Acepto las <a href="http://localhost:8100/politicas2">Politicas y
+              Condiciones</a> </ion-label>
+          <ion-checkbox slot="end" color="dark"></ion-checkbox>
+
+        </ion-item>
+
+      </form>
+      <br>
+      <ion-button slot="end" color="dark">
+        Completar Registro</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

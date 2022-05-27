@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Perfil</ion-title>
+    <ion-buttons color="dark">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="medium">
+      <ion-list color="medium">
+
+        <ion-item href="http://localhost:8100/config" color="light">
+          Configuraciones
+          <ion-icon name="construct-outline" slot="end">
+
+          </ion-icon>
+        </ion-item>
+
+        <ion-item href="http://localhost:8100/perfil" color="dark">
+          Perfil
+          <ion-icon name="person-outline" slot="end">
+
+          </ion-icon>
+
+        </ion-item>
+
+        <ion-item href="http://localhost:8100/nego" color="light">
+          Negociaciones
+          <ion-icon name="chatbox-outline" slot="end">
+
+          </ion-icon>
+        </ion-item>
+
+
+        <ion-item href="http://localhost:8100/politicas" color="dark">
+          Politicas y Condiciones
+          <ion-icon name="warning-outline" slot="end">
+
+          </ion-icon>
+        </ion-item>
+
+        <ion-item href="http://localhost:8100/login" color="light">
+          Cerrar sesion
+          <ion-icon name="exit-outline" slot="end">
+
+          </ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+  <ion-content>
+    <ion-toolbar></ion-toolbar>
+    <ion-toolbar color="none">
+      <ion-avatar slot="start">
+        <img src="https://i.postimg.cc/YCWjFvpp/IMG-2d0j6t.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Marcelo Bazan</h2>
+        <h3> marcbaz1998@gmail.com</h3>
+      </ion-label>
+    </ion-toolbar>
+
+
+    <ion-card>
+      <ion-accordion-group>
+        <ion-accordion>
+          <ion-item slot="header">
+            <ion-icon slot="end" name="notifications-outline"></ion-icon>
+            <ion-label>Notificaciones</ion-label>
+          </ion-item>
+
+          <ion-list slot="content">
+            <ion-item>
+              <ion-label>Marque si desea recibir notificaciones</ion-label>
+              <ion-checkbox color="dark"></ion-checkbox>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+      </ion-accordion-group>
+      <ion-accordion-group>
+        <ion-accordion>
+          <ion-item slot="header">
+            <ion-icon slot="end" name="person-outline"></ion-icon>
+            <ion-label>Informacion Personal</ion-label>
+          </ion-item>
+
+          <ion-list slot="content">
+            <ion-item>
+              <ion-label>
+                <h2>Numero Telefonico</h2>
+                <h3> 0999887766</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <h2>Ubicacion</h2>
+                <h3> Ciudad Del Este</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <h2>Portavoz</h2>
+                <h3> No</h3>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card>
+    <ion-card>
+
+    </ion-card>
+    <ion-toolbar color="none">
+      <ion-title>
+        Informacion Legal
+      </ion-title>
+    </ion-toolbar>
+    <ion-card>
+
+
+      <ion-item href="http://localhost:8100/politicas">
+        <ion-icon name="warning-outline" slot="end"></ion-icon>
+        <ion-label>Politicas y Condiciones</ion-label>
+
+      </ion-item>
+
+    </ion-card>
+    <ion-card>
+
+    </ion-card>
+
+  </ion-content>
+
+
+
+
+</ion-app>

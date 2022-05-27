@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+
+    <img src="https://i.postimg.cc/sx36vd9y/Logo-V-1.jpg">
+
+    <ion-title>
+
+
+
+    </ion-title>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header color="dark">
+      <ion-title>Iniciar Sesion</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item color="light">
+          No te quedes sin una voz
+        </ion-item>
+
+        <ion-item>
+
+          <ion-label position="floating">
+            Usuario
+          </ion-label>
+          <ion-input formControlName="user"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input formControlName="Password" type="password"></ion-input>
+        </ion-item>
+
+      </form>
+      <br>
+      <ion-toolbar color="none">
+        <ion-button slot="start" color="dark" href="http://localhost:8100/registro">
+          Registrate
+        </ion-button>
+
+        <ion-button slot="end" color="dark" href="http://localhost:8100/principal">
+          Ingresar
+        </ion-button>
+
+      </ion-toolbar>
+      <ion-toolbar color="none">
+        <a color="dark" slot="end" href="http://localhost:8100/restaurar"> Olvide mi contrasenha</a>
+      </ion-toolbar>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

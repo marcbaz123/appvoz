@@ -1,0 +1,118 @@
+<ion-toolbar color="dark"> 
+  <ion-title>Voz Para La Gente
+  </ion-title>
+      <ion-buttons color="dark">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+      <ion-icon slot="end" name="home-outline"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+    
+    </ion-toolbar>
+  
+
+
+
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="medium">
+      <ion-list color="medium">
+       
+        <ion-item href="http://localhost:8100/config" color="light">
+           Configuraciones 
+            <ion-icon name="construct-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/perfil" color="dark">
+           Perfil 
+            <ion-icon name="person-outline" slot="end">
+             
+            </ion-icon>
+
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/nego" color="light">
+           Negociaciones 
+            <ion-icon name="chatbox-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        
+        <ion-item href="http://localhost:8100/politicas" color="dark">
+            Politicas y Condiciones 
+             <ion-icon name="warning-outline" slot="end">
+ 
+             </ion-icon>
+         </ion-item>
+        
+        <ion-item href="http://localhost:8100/login" color="light">
+            Cerrar sesion 
+            <ion-icon name="exit-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    
+  </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+    
+  <ion-content [fullscreen]="true">
+    <ion-card>
+    <ion-card-header color="dark">
+     <ion-card-title>Configuraciones</ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+    <form [formGroup]="formularioConfig" >
+      <ion-item color="light">
+        <b>
+          
+        </b>
+      </ion-item>
+    
+     
+        <ion-item>
+      <ion-label position="stacked">Correo Electronico</ion-label>
+      <ion-input formControlName="correo">marcbaz1998@gmail.com</ion-input>
+    </ion-item>
+      <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input formControlName="Nombre">Marcelo Bazan</ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input formControlName="Password" type="password">225588</ion-input>
+      </ion-item>
+     <ion-item>
+      <ion-label position="stacked">Confirmar Password</ion-label>
+      <ion-input formControlName="Password" type="password">225588</ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="stacked">Confirmar Password</ion-label>
+      <ion-input formControlName="Password" type="password">225588</ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-label position="stacked">Confirmar Password</ion-label>
+      <ion-input formControlName="Password" type="password">225588</ion-input>
+     </ion-item>
+
+  </form>
+  <br>
+  <ion-button color="dark">
+  Actualizar</ion-button>
+  </ion-card-content>
+  
+  </ion-card>
+  
+  </ion-content>
+  
+</ion-app>

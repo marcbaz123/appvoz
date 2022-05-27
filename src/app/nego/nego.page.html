@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons color="dark">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+       <ion-title></ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="medium">
+      <ion-list color="medium">
+       
+        <ion-item href="http://localhost:8100/config" color="light">
+           Configuraciones 
+            <ion-icon name="construct-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/perfil" color="dark">
+           Perfil 
+            <ion-icon name="person-outline" slot="end">
+             
+            </ion-icon>
+
+        </ion-item>
+       
+        <ion-item href="http://localhost:8100/nego" color="light">
+           Negociaciones 
+            <ion-icon name="chatbox-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+       
+        
+        <ion-item href="http://localhost:8100/politicas" color="dark">
+            Politicas y Condiciones 
+             <ion-icon name="warning-outline" slot="end">
+ 
+             </ion-icon>
+         </ion-item>
+        
+        <ion-item href="http://localhost:8100/login" color="light">
+            Cerrar sesion 
+            <ion-icon name="exit-outline" slot="end">
+
+            </ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    
+  </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
+
+
+
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>List</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <ion-list>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/4812/production/_110005481_baby-yoda.jpg.webp" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Bebe Yoda</h2>
+      <h3> The force may be with you</h3>
+      <p>Do or do not. There is no try...</p>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://cnnespanol.cnn.com/wp-content/uploads/2018/12/chalecos-amarillos-francia-paris-protestas.jpg?quality=100&strip=info" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Oliver Roco</h2>
+      <h3> Entonces tenemos un acuerdo..</h3>
+      <p>Descuide, lucharemos por sus derechos...</p>
+      
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://thumbs.dreamstime.com/z/joven-liderando-un-grupo-de-manifestantes-en-la-calle-j%C3%B3venes-raza-mixta-internacional-diverso-personas-con-carteles-blanco-198085266.jpg" />
+    </ion-avatar>
+    <ion-label>
+      <h2>OLIVIA GANGSTART</h2>
+      <h3> No nos van a pisotear..</h3>
+      <p>Creemos un mundo mejor a base de union...</p>
+    </ion-label>
+  </ion-item>
+
+</ion-list>
+</ion-content>
+</ion-app>
+<ion-toolbar>
+  <ion-img src="https://i.postimg.cc/sx36vd9y/Logo-V-1.jpg"></ion-img>
+</ion-toolbar>
